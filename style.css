@@ -1,0 +1,1381 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(120, 38, 94);
+}
+
+.barra {
+    text-align: center;
+    width: 800;
+    height: 800;
+}
+
+
+/************************************/
+/**  IMAGEM DOS PRUDOTOS DA LOJA   **/
+/************************************/
+
+.img-loja {
+    text-align: center;
+    height: 1200;
+    display: flex;
+    justify-items: center;
+}
+
+.img-2 {
+    width: 1100px;
+}
+
+.img-3 {
+    width: 1100px;
+    height: 400px;
+}
+
+.img-4 {
+    width: 200px;
+    border-radius: 25rem;
+}
+
+/********************************************/
+/*                HEARDER                   */
+/********************************************/
+
+#divBusca {
+    background-color: #ffffff;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+}
+
+img {
+    padding: 20px;
+}
+
+.suporte {
+    display: flex;
+    /*Defini o layout como flexível, permitindo que os elementos filhos sejam dispostos em uma linha ou coluna*/
+    align-items: center;
+    /* Alinha os elementos filhos verticalmente no centro*/
+    height: 200px;
+    /*Define a altura do elemento com 200px*/
+}
+
+.suportecliente {
+    display: flex;
+    /*Defini o layout como flexível, permitindo que os elementos filhos sejam dispostos em uma linha ou coluna*/
+    align-items: center;
+    /* Alinha os elementos filhos verticalmente no centro*/
+    color: rgb(0, 0, 0);
+    /* Defini a color do texto como branca*/
+    padding-right: 10px;
+    /* Adiciona um espaçamento de 10px á direita do elemento*/
+}
+
+.logo {
+    display:flex;
+    justify-content: baseline;
+    /* Alinha os elementos filhos horizontamente no final (direita).*/
+    align-items:start;
+    /* Alinha os elementos filhos verticalmente no centro*/
+    padding-left: 300px;
+    /*Adiciona um espaçamento de 300px á esquerda do elemento*/
+    margin: -250px;
+    
+}
+
+.search-box{
+    position: absolute;
+    top:10%;
+    left: 40%;
+    transform: translate(-20%, -10%);
+    background: #000;
+    height: 40px;
+    padding: 30px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-text{
+    border: none;
+    background:none;
+    outline: none;
+    padding: 0;
+    color: #fffdfe;
+    font-size: 16px;
+    line-height: 200px;
+}
+.search-btn{
+    width: 300px;
+    height: 20px;
+    border-radius: 70000000%;
+    background: #000;
+    display:grid;
+    justify-content: end;
+    align-items:center;
+}
+.search-btn i {
+    font-size: 1.2rem;
+    color: rgb(120, 38, 94);
+    text-decoration:none;
+}
+
+.alinhar {
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    padding-block-end: 5px;
+    margin-right:5px;
+}  
+.alinhar h4{
+    width: 100px;
+    height: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.71rem;
+    display: inline-block;
+    align-items: end;
+    margin-right:10px;
+   
+}
+.alinhar i{
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+}
+
+
+/********************************************/
+/*                MENU                      */
+/********************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: white;
+    padding: 0 5rem;
+    position:relative;
+    top: 0;
+    display: flex;
+    place-items:center;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+nav ul li {
+    margin: 0 5rem;
+    padding: 0;
+}
+
+nav ul li a,
+nav ul li .dropdown__title {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: rgb(120, 38, 94);
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+    background-color: white;
+    transition: 280ms all 120ms ease-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li .dropdown__title:hover,
+nav ul li .dropdown__title:focus {
+    color: black;
+}
+
+.dropdown {
+    position: inherit;
+}
+
+.dropdown .dropdown__title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown .dropdown__title:after {
+    content: '';
+    /*Defini o conteudo do pseudo-elemento como vazio.*/
+    width: 1.5rem;
+    height: 1px;
+    background-color: #1c7830;
+    position: absolute;
+    /*Define a posição do pseudo-elemento como absolute.*/
+    bottom: -3px;
+    /*Definir a posiçao do pseudo-elemento como -3px abaixo  do elemento pai.*/
+    left: 50%;
+    /*Definir a posiçao do pseudo-elemento com 50% a esquerda do elemento pai.*/
+    transform: translate(-50%, 50%);
+    /*Define a transformaçao do pseudo-elemento como uma traslaçao de -50% a esquerda e 50% para cima.*/
+    opacity: 0;
+    /*Definindo a opacidade do pseudo-elemento como 0 (invisível).*/
+    transition: all 0.2s ease;
+    /*Define a transiçao do pseudo-elemento como uma animaçao 0.3 segundos com efito ease.*/
+}
+
+.dropdown .dropdown__menu {
+    position:absolute;
+    min-width: 50px;
+    left: 50%;
+    top: calc(100% - 0.25rem);
+    transition: 280ms all 120ms ease-out;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    visibility: hidden;
+    opacity: 0.3;
+    padding: 0.5em 0;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.dropdown .dropdown__menu a {
+    color: rgb(120, 38, 94);
+    display: block;
+    padding: 0.5em;
+    opacity: 0;
+    transition: 280ms all 120ms ease-out;
+}
+
+.dropdown .dropdown__menu a:hover {
+    background-color: white;
+}
+.dropdown__menu a:hover{
+    color: #1c7830;
+    border-bottom: 3px solid#1c7830;
+    
+}
+
+.dropdown .dropdown__menu a:focus {
+    outline:#000000;
+    background-color: #601345;
+}
+
+.dropdown:after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 1.25rem);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 280ms all 120ms ease-out;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown__menu,
+.dropdown:focus-within .dropdown__menu {
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown__menu a,
+.dropdown:focus-within .dropdown__menu a {
+    opacity: 1;
+}
+
+.dropdown:hover:after,
+.dropdown:focus-within:after {
+    opacity: 1;
+}
+
+.dropdown .dropdown__title{
+    border: 0px solid white;
+}
+/*********************************************************/
+/*                INICIA-SE O BANNER                     */
+/**********************************************************/
+
+.banner2 {
+    background-image: linear-gradient(100deg, #ffffff3f, #ffffff3f), url('imagem/MiniDeserto.png');
+    /*Define a imagem do fundo como uma gradiente de preto a preto claro e uma imagem de capa */
+    height: 300px;
+    width: 999px;
+    background-size: cover;
+    right: 10px;
+    padding: 50px 350px 0px 3px;
+    /*Adiciona um espaçamento de 20px em cima e embaixo,e 0px á esquerda e a direita*/
+    background-position: center;
+}
+
+.txtbanner2 {
+    max-width: 500px;
+    margin: 10px;
+}
+
+.txtbanner2 p {
+    color: rgb(255, 255, 255);
+    /*Define a cor*/
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    /*Adiciona um espaçamento de 1rem emabixo do paragrafo*/
+    font-weight: 500;
+}
+
+.txtbanner2 h2 {
+    color: #eddee9;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.0;
+}
+
+.txtbanner2 a {
+    margin-top: 2cm;
+    /*Adiciona em espaçmento de 2rem em cima do link*/
+    text-decoration: none;
+    /*Remover a formataçao de sublinhado do link*/
+    color: #640847;
+    background-color: white;
+    display: inline-block;
+    /*Define o layout do linkn como branco*/
+    padding: 0.7rem 1rem;
+    /*Adiciona um espaçamento de 1rem em cima e embaixo e 3rem á esquerda e a direita do link*/
+    border-radius: 2rem;
+    /*Definir a borda do link com um  arredondamento de 3rem*/
+}
+
+
+/***********************************************/
+/*         BANNER DA FLORES ESUCULENTAS       */
+/**********************************************/
+
+
+.banner {
+    background-image: linear-gradient(100deg, #000000, #00000020), url('imagem/capa.jpg');
+    /*Define a imagem do fundo como uma gradiente de preto a preto claro e uma imagem de capa */
+    height: 700px;
+    background-size: cover;
+    right: 150px;
+    padding: 200px 650px 0px 10px;
+    background-position: center;
+}
+
+.txtbanner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.txtbanner p {
+    color: rgb(255, 255, 255);
+    /*Define a cor*/
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    /*Adiciona um espaçamento de 1rem emabixo do paragrafo*/
+    font-weight: 500;
+}
+
+.txtbanner h2 {
+    color: #8d146c;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.txtbanner a {
+    margin-top: 2rem;
+    /*Adiciona em espaçmento de 2rem em cima do link*/
+    text-decoration: none;
+    /*Remover a formataçao de sublinhado do link*/
+    color: #000000;
+    background-color: white;
+    display: inline-block;
+    /*Define o layout do linkn como branco*/
+    padding: 1rem 3rem;
+    /*Adiciona um espaçamento de 1rem em cima e embaixo e 3rem á esquerda e a direita do link*/
+    border-radius: 3rem;
+    /*Definir a borda do link com um  arredondamento de 3rem*/
+}
+
+
+/**********************************************/
+/*        CONTEUDO DO MAIN (PRINCIPAL)        */
+/**********************************************/
+
+
+.main-conteudo {
+    background-color: rgb(243, 143, 221);
+}
+
+
+/**************************************************/
+/*                   TAG                          */
+/**************************************************/
+
+.align {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.base-conteudo {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    /*Define um modelo de grade com 4 colunas de largura igual, usando grid-templade-colums*/
+    gap: 3rem;
+    /*Adiciona um espaço de 3rem entre as celulas da grade usando gap */
+    padding: 3rem 0;
+    /*Adiciona um espaçamento de 1rem em cima e embaixo e 3rem á esquerda e a direita do link*/
+
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    width: 250px;
+    background-color: rgb(150, 49, 118);
+    padding: 1.0rem 0;
+    box-shadow: 10px 5px 5px rgb(37, 8, 27);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    /*define a diraçao flexível para coluna usando */
+    gap: 0.5rem;
+}
+
+.conteudo span {
+    font-weight: 700;
+    /*Define o peso da fonte para 700 usando font-weight*/
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.conteudo p {
+    color: #fffefe;
+    font-weight: 400;
+}
+
+/*****************************************************/
+/*                   TITULO                          */
+/*****************************************************/
+
+.titulosobre {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(93, 13, 62);
+    margin: 25px;
+}
+
+.just {
+    display: flex;
+    justify-items: center;
+    padding: 20px 140px 20px 140px;
+}
+
+.texto {
+    font-size: 16px;
+    text-align: justify;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+
+.maker {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(101, 16, 68);
+    margin: 5px;
+}
+
+/*******************************************************/
+/*                   MELHORES PRODUTOS                 */
+/*******************************************************/
+
+.top-productos {
+    display: flex;
+    /*Definir um layout flexivel*/
+    flex-direction: column;
+    /*Direçao dos itens é vertical (coluna)*/
+    gap: 2rem;
+    /*Escapamento entre os elementos filhos*/
+    margin-bottom: 3rem;
+    /*Margem inferior*/
+
+}
+
+.container-options {
+    display: flex;
+    /*Definir um layout flexivel*/
+    justify-content: center;
+    /*Centralizar os elementos ao longo do eixo principal*/
+    gap: 4rem;
+    /*Escapamento entre os elementos filhos*/
+    margin-bottom: 2.5rem;
+    /*Margem Inferior*/
+}
+
+.container-options span {
+    color: #ffffff;
+    background-color: #8b074d;
+    padding: 1rem 3rem;
+    /*Espaçamento interno com 0.7  na parte superior e inferior e 3rem na direita e na esquerda*/
+    font-size: 1rem;
+    /*Tamanho da fonte*/
+    text-transform: capitalize;
+    /*Capitalize onprimeiro caractere de cada palavra*/
+    border-radius: 2rem;
+    /*Arrendonda as bordas*/
+    cursor: pointer;
+    /*Muda p cursor para indicar que é clicavel*/
+
+}
+
+.container-options span:hover {
+    background-color: #8b074d;
+    color: #6c7d67;
+
+}
+
+.container-options span.active {
+    background-color: #695A49;
+    color: #fff;
+}
+
+/*******************************************************/
+/*                   DESTAQUES                         */
+/*******************************************************/
+.tipos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container-categoria {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-inline: 240px;
+
+}
+
+.card-categoria {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    gap: 0.9rem;
+}
+
+.categoria-tipo {
+    background-image: linear-gradient(#00000000, #00000080), url('imagem/tipos1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-buque {
+    background-image: linear-gradient(#00000000, #00000080), url('imagem/buquecoloridorosas.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-presente {
+    background-image: linear-gradient(#00000000, #00000080), url('imagem/Simpaticaes.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-cestas {
+    background-image: linear-gradient(#00000000, #00000080), url('imagem/CestaVinho&Chocolate.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.categoria-produtos {
+    background-image: linear-gradient(#00000000, #00000080), url('imagem/brownie.webp');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 350px;
+}
+
+.card-categoria p {
+    font-size: 1rem;
+    color: rgb(244, 244, 244);
+    text-transform: capitalize;
+    /*Colocar em Maiuscula a primeira letra de cada palavra no texto*/
+    position: relative;
+    /*Define a posiçao dos <p> elementos como relativa, o que nos permite posicionar o pseudo-elemento ::after de forma absoluta*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-categoria p::after {
+    content: '';
+    /*Defini o conteudo do pseudo-elemento como uma string vazia, necessaria para criar o pseudoelemento*/
+    width: 2.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    /*Define a posiçao do pseudoelemento como absolute, o que nos permite posiciona-lo em relaçao ao seu elemnto pai*/
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-categoria span {
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    /*Define o formato do cursor como uma mão apontando ao passar o mouse sobre os <span> elementos.*/
+}
+
+.card-categoria span:hover {
+    color: #ffffff;
+
+}
+
+
+
+/*******************************************************/
+/*                       PRODUTOS                      */
+/*******************************************************/
+
+.heading-1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*Mantém 4 colunas em  1 linha */
+    gap: 10px;
+    /*Diminui o espaço entre os cards*/
+    margin: 0px;
+    padding: 0px 120px 0px 120px;
+}
+
+.card-produtos {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    /*Diminuir o padding para ajustar o tamanho*/
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    width: 280px;
+    /*Garante que o card ocupe a largura da coluna*/
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+}
+
+.container-img {
+    position: relative;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.container-img .discount {
+    position: absolute;
+    left: 0;
+    background-color: #601345;
+    color: #fff;
+    padding: 1px 1rem;
+    border-radius: 6rem;
+    font-size: 1.2rem;
+
+}
+
+.card-produtos:hover .discount {
+    background-color: #000000;
+}
+
+/************ANIMAÇAO BOTÕES************/
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    /*Posiçao absolute para posicionamento especifico*/
+    top: 0;
+    /*Alinhamento no topo*/
+    right: -3rem;
+    /*Alinahmento a direita*/
+    z-index: -1;
+    /*Define a sobreposiçao inicial*/
+    transition: all 0.4s ease;
+    /*Animaçao de transiçao suave*/
+}
+
+.button-group span {
+    border: 0.8px solid #601345;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.button-group span:hover {
+    background-color: #601345;
+}
+
+.button-group span i {
+    font-size: 1rem;
+    color: #601345;
+}
+
+.button-group span:hover i {
+    color: #ffffff;
+}
+
+.card-produtos:hover .button-group {
+    z-index: 0;
+    right: -1rem;
+}
+
+/*****************************************/
+/***********   INICIA AS ESTRELA    ******/
+/****************************************/
+
+.content-card-product {
+    display: grid;
+    /*Definir um layout de grade*/
+    justify-items: center;
+    /*Centraliza os itens horizontalmente*/
+    grid-template-columns: 1fr 1fr;
+    /*Cria duas colunas de tamanho igual*/
+    grid-template-rows: repeat(4, min-content);
+    /*Cria 4 linhas de altura minima*/
+    row-gap: 1rem;
+    /*Espaçamento vertical entre as linhas*/
+}
+
+.stars {
+    grid-row: 1/2;
+    /*Ocupa a primeira linha da grade*/
+    grid-column: 1/-1;
+    /*Ocupa todas as colunas da grade*/
+
+}
+
+.stars i {
+    font-size: 1.2rem;
+    /*Define o tamanho das estrelas */
+    color: #fdd01c;
+    /*Define a color da estrelas*/
+}
+
+.content-card-product h3 {
+    grid-row: 2/3;
+    /*Ocupa a segunda linha da grade*/
+    grid-column: 1/-1;
+    /*Ocupa todas as colunas das grade*/
+    font-weight: 400;
+    /*Define o peso da fonte*/
+    font-size: 1.2rem;
+    /*Define o tamanho da fonte*/
+    margin-bottom: 1rem;
+    /*Define a margem inferior*/
+    cursor: pointer;
+    /*Muda o cursor para indicar que o titulo é clicavel*/
+}
+
+.content-card-product h3:hover {
+    color: #960a70;
+    /*Muda a cor do titulo ao passar a */
+}
+
+.add-cart {
+    justify-self: start;
+    /*Alinha o botao ao inicio horizontalmente*/
+    border: 1px solid #8c1067;
+    /*Define uma borda ao redor do botao*/
+    padding: 0.9rem;
+    border-radius: 50%;
+    /*Define o formato circular nos cantos, arrendodamento*/
+    cursor: pointer;
+    /*Muda o cursor para inciar que é clicavel*/
+    transition: all 0.4s ease;
+    /*Transiçao suave ao alterar estilos*/
+    display: flex;
+    /*Define um layout flexivel*/
+    align-items: center;
+    /*Centraliza o conteudo verticalmente*/
+    justify-content: center;
+    /*Centraliza o conteudo horizontalmente*/
+}
+
+.add-cart:hover {
+    background-color: #98136e;
+    /*Muda a cor de fundo do botão ao passar o mouse*/
+}
+
+.add-cart i {
+    font-size: 0.9rem;
+    /*Define o tamanho do icone*/
+    color: #911967;
+}
+
+.add-cart:hover i {
+    color: #fff;
+    /*Define a cor do icone ao passar o mouse */
+}
+
+.content-card-product .price {
+    justify-self: end;
+    /*Alinha o preço ao final horizontalmente*/
+    align-self: center;
+    /*Centraliza o preço verticalmente*/
+    font-size: 1.4rem;
+    /*Define o tamanho do preço*/
+    font-weight: 600;
+    /*Define o peso da fonte do preço */
+
+}
+
+.content-card-product .price span {
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-decoration: line-through;
+    /*Aplica um risco sobre o preço*/
+    color: #777;
+    margin-left: 0.5rem;
+    /*Define uma margem á esquerda do preço original*/
+}
+
+/************************************/
+/****       CARROSSEL               */
+/************************************/
+
+.carousel-wrapper {
+    height: 350px;
+    position: relative;
+    width: 1100px;
+    display: block;
+    margin: 90px auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 60px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    border: solid rgb(248, 248, 248);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+
+}
+
+.arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('imagem/img1.png');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('imagem/img2.png');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('imagem/img3.png');
+    background-size: cover;
+}
+
+*:target~.item-1 {
+    opacity: 0;
+}
+
+#item-1:target~.item-1 {
+    opacity: 1;
+
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+/******************************/
+/*        LOCALIZAÇAO        */
+/******************************/
+.local {
+    display: flex;
+    gap: 300em;
+}
+
+form {
+    width: 100%;
+    /*Define a largura do formulario como 100%*/
+    max-width: 400px;
+    /*Define a lardura maxina do formulario */
+    display: flex;
+    flex-direction: column;
+    /*Define a direçao do formulario como coluna*/
+    gap: 10rem;
+    background-color: #fff;
+    border-radius: 144px;
+}
+
+/*******************************************/
+/******        INFORMATIVOS            *****/
+/*******************************************/
+
+.blogs {
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 40px 20px 40px 20px;
+    padding: 20px 30px 60px 30px;
+    background-color: #f9f5f0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-blog .container-img {
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /*Oculta o conteudo que excede o container*/
+
+}
+
+.container-img {
+    border-radius: 10px;
+}
+
+.button-group-blog {
+    position: absolute;
+    /*Define a posiçao absoluta do grupo de botoes*/
+    bottom: 1.2rem;
+    right: -2.5rem;
+    /*Inicialmeante posiciona o grupo de botoes a direita, fora da tela*/
+    display: flex;
+    gap: 0.7rem;
+    z-index: -1;
+    /*Coloca o grupo de botoes atras do conteudo*/
+    transition: all 0.3s ease;
+    /*Adiciona uma transiçao suave de 0.3s para o movimento*/
+}
+
+.card-blog:hover .button-group-blog {
+    z-index: 0;
+    /*Quando o cartao é sobreposto, traz o grupo de botoes para frente*/
+    right: 1.5rem;
+    /*Move o grupo de botoes para a posiçao visivel a direita*/
+}
+
+.button-group-blog span {
+    background-color: #fdfbfb;
+    padding: 1rem;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group-blog span i {
+    font-size: 0.6rem;
+}
+
+.button-group-blog span:hover i {
+    color: #ffffff;
+}
+
+.button-group-blog span:hover {
+    background-color: rgb(120, 19, 93);
+}
+
+.content-blog h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: #790a50;
+    font-weight: 400;
+}
+
+.content-blog h3:hover {
+    color: #45673c;
+}
+
+.content-blog p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #45673c;
+}
+
+.content-blog span {
+    color: #601345;
+    font-size: 1.3rem;
+}
+
+.btn-read-more {
+    padding: 1rem 3rem;
+    background-color: rgb(162, 15, 93);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.99rem;
+    border-radius: 4rem;
+    margin: 1rem 0 3rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-read-more:hover {
+    background-color: #601345;
+}
+
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+
+.footer {
+    background-color: #601345;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    background-color: rgb(120, 38, 94);
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 30rem;
+    gap: 6rem;
+    justify-items: center;
+}
+
+.title-footer {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons span {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00acee;
+}
+
+.youtube {
+    background-color: #c4302b;
+}
+
+.pinterest {
+    background-color: #c8232c;
+}
+
+.instagram {
+    background: linear-gradient(#405de6,
+            #833ab4,
+            #c13584,
+            #e1306c,
+            #fd1d1d,
+            #f56040,
+            #fcaf45);
+}
+
+.content p {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.content input {
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #d2b495;
+    cursor: pointer;
+    padding: 0.5rem 0 1.2rem;
+    color: black;
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+    color: #eee;
+}
+
+.content button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.content button:hover {
+    background-color: #45673c;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid #d2b495;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .customer-support {
+        display: none;
+    }
+
+    .content-shopping-cart {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .content-banner {
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 25rem 0;
+    }
+
+    .container-features {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 2rem;
+    }
+
+    .card-feature {
+        padding: 2rem;
+    }
+
+    .heading-1 {
+        font-size: 2.4rem;
+    }
+
+    .card-category {
+        height: 12rem;
+    }
+
+    .card-category p {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .card-category span {
+        font-size: 1.4rem;
+    }
+
+    .container-options {
+        align-items: center;
+    }
+
+    .container-options span {
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+
+    .container-products {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+
+    .gallery {
+        grid-template-rows: repeat(2, 15rem);
+    }
+
+    .container-blogs {
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+
+        height: 52rem;
+    }
+
+    .menu-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
